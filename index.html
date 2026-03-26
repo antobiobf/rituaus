@@ -123,12 +123,12 @@
               <a class="btn btn-secondary" href="#servicos">Conhecer terapias</a>
             </div>
 
-            <div class="hero-pills">
+            <!-- <div class="hero-pills">
               <span class="pill">Terapias individuais</span>
               <span class="pill">Vivências em grupo</span>
               <span class="pill">Jornadas terapêuticas</span>
               <span class="pill">Presença, acolhimento e reconexão</span>
-            </div>
+            </div> -->
           </div>
 
           <div class="hero-card reveal">
@@ -589,7 +589,7 @@
     </section>
 
 
-    <section class="section" id="galeria" style="display: none;">
+    <section class="section" id="galeria">
       <div class="container">
         <div class="section-head reveal">
           <div>
@@ -959,6 +959,14 @@
               </a>
             </div>
 
+            <!-- EMAIL -->
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div class="icon-chip">✉</div>
+              <a href="mailto:contato@rituaus.com.br">
+                contato@rituaus.com.br
+              </a>
+            </div>
+
             <!-- ENDEREÇO -->
             <div style="display:flex; align-items:center; gap:12px;">
               <div class="icon-chip">⌖</div>
@@ -1052,71 +1060,56 @@
       const galleryData = [
         {
           title: "Acupuntura",
-          gridClass: "grid-2",
+          gridClass: "grid-3",
           images: [
-            "Acupuntura-1.jpeg",
-            "Acupuntura-2.jpeg"
+            "Acupuntura_1.jpeg",
+            "Acupuntura_2.jpeg",
+            "Acupuntura_3.jpeg"
           ]
         },
         {
           title: "Cacau Terapia",
-          gridClass: "grid-4",
+          gridClass: "grid-3",
           images: [
-            "Cacau Terapia 1 .JPEG",
-            "Cacau terapia 2 .JPEG",
-            "Cacau terapia 3 .JPEG",
-            "Cacau terapia 4.JPEG"
+            "Cacau terapia_1.jpeg",
+            "Cacau terapia_2.jpeg",
+            "Cacau terapia_3.jpeg"
           ]
         },
         {
           title: "Campo Áurico • Limpeza com ervas",
           gridClass: "grid-3",
           images: [
-            "Campo áurico - limpeza com ervas 1.JPEG",
-            "Campo áurico - limpeza com ervas 2.JPEG",
-            "Campo áurico - limpeza com ervas 3.JPEG"
+            "Limpeza_1.jpeg",
+            "Limpeza_2.jpeg",
+            "Limpeza_3.jpeg"
           ]
         },
         {
           title: "Massagem Sonora",
           gridClass: "grid-3",
           images: [
-            "Massagem sonora 1 .JPEG",
-            "Massagem sonora 3.JPEG",
-            "Massagem sonos 2 .JPEG"
+            "Massagem_1.jpeg",
+            "Massagem_2.jpeg",
+            "Massagem_3.jpeg"
           ]
         },
         {
           title: "Registros Akáshicos",
-          gridClass: "grid-2",
+          gridClass: "grid-3",
           images: [
-            "Registros Akashicos 1 .JPEG",
-            "Registros Akashicos 2.JPEG"
+            "Registros_1.jpeg",
+            "Registros_2.jpeg",
+            "Registros_3.jpeg"
           ]
         },
         {
           title: "Ventosaterapia",
-          gridClass: "grid-2",
+          gridClass: "grid-3",
           images: [
-            "Ventosaterapia.JPEG",
-            "Vetosaterapia 2 .jpg"
-          ]
-        },
-        {
-          title: "Jornada Terapêutica • O Caminho",
-          gridClass: "grid-4",
-          images: [
-            "Nossa jornada terapêutica .JPEG",
-            "O caminho - jornada terapeuta individual 1.JPEG",
-            "O caminho - jornada terapeuta individual 2.JPEG",
-            "O caminho - jornada terapeuta individual 3.JPEG"
-          ]
-        },
-        {
-          title: "Institucional",
-          gridClass: "grid-1",
-          images: [
-            "Como podemos te ajudar_.JPEG"
+            "Ventosaterapia_1.jpeg",
+            "Ventosaterapia_2.jpeg",
+            "Ventosaterapia_3.jpeg"
           ]
         }
       ];
@@ -1175,11 +1168,9 @@
       }
 
       const modalImage = document.getElementById("gallery-modal-image");
-      // const modalCaption = document.getElementById("gallery-modal-caption");
 
       modalImage.src = src;
       modalImage.alt = alt;
-      // modalCaption.textContent = alt;
 
       modal.classList.add("show");
       document.body.style.overflow = "hidden";
